@@ -1,0 +1,70 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-family: "poppins";
+}
+
+.spinner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-wrapper span {
+  margin-right: 5px;
+}
+
+body {
+  font-family: "poppins" !important;
+  font-weight: 500;
+  background-image: linear-gradient(rgba(12, 11, 11, 0.466), rgba(0, 0, 0, 3)), url(/././assets/crn.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.top-position {
+  margin-top: 90px;
+}
+
+.btn {
+  margin-top: 8px;
+}
+
+.btn button {
+  font-family: "poppins";
+
+}
+
+.fullWidth {
+  width: 100%;
+  font-family: "poppins" !important;
+  color: white !important;
+  border-color: white !important;
+
+}
+
+.example-card {
+  font-family: "poppins";
+  text-align: center;
+}
+
+mat-label {
+  color: white;
+}
+
+::ng-deep .mat-select-value {
+  color: white !important;
+  font-family: "poppins";
+}
+
+;
+
+
+::ng-deep .mat-form-field .mat-input-underline {
+  background-color: white;
+}

@@ -1,0 +1,65 @@
+<body>
+  <mat-toolbar color="primary">
+    <span class="example-spacer"></span>
+    <h2 class="title">WORLD COUNTRY WISE COVID-19 CASES</h2>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+
+  <div class="bootstrap-wrapper top-position">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <mat-form-field appearance="legacy" class="fullWidth">
+            <mat-label>Country Name</mat-label>
+            <mat-select [(ngModel)]="country" name="Country" (change)="getCountry($event)">
+              <mat-option *ngFor="let c of countries" [value]="c.Country">
+                {{c.Country}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="col-md-4 btn">
+          <button mat-raised-button (click)="getDetails()">
+            <span class="material-icons">
+              track_changes </span>
+            GET DETAILS</button>
+        </div>
+      </div>
+      <!--row div end---->
+    </div>
+    <!--container div end---->
+  </div>
+  <!--bootstrap-wrapper div end---->
+  <div class="bootstrap-wrapper top-position">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <mat-card class="example-card">
+            <mat-card-title>{{country}} Confirmed</mat-card-title>
+            <mat-card-content>
+              {{confirmed}}
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-4">
+          <mat-card class="example-card">
+            <mat-card-title>{{country}} Recovered</mat-card-title>
+            <mat-card-content>
+              {{recovered}}
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-md-4">
+          <mat-card class="example-card">
+            <mat-card-title>{{country}} Deaths</mat-card-title>
+            <mat-card-content>
+              {{death}}
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
